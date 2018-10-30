@@ -1,0 +1,109 @@
+h3 {
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0px;
+  font-family: fantasy;
+  clear: both;
+  background-color: #eee;
+}
+
+.family-card {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 15px 0px 30px 15px;
+  background-color: #eee;
+}
+
+.family-card i {
+  font-size: 60px;
+  float: left;
+  padding: 0px 20px 0px 10px;
+}
+
+.family-card p {
+  font-size: 17px;
+  clear: right;
+  padding: 0px;
+  margin: 0px;
+  color: #444;
+}
+
+.tasks-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  background-color: #eee;
+}
+
+.tasks-list-item {
+  border-bottom: 1px solid #ccc;
+  color: #666;
+}
+
+.tasks-list-item .task-icons i {
+  float: right;
+  /* margin-right: 5px; */
+  padding: 5px;
+}
+
+.tasks-list-item .task-icons i:first-child {
+  color: #607D8B;
+  font-size: 20px;
+}
+
+.tasks-list-item .task-icons i:last-child {
+  color: #9E9E9E;
+  font-size: 14px;
+}
+
+.confirm {
+  position: absolute;
+  margin-top: -48px;
+  display: none;
+  background-color: #eee;
+}
+
+.task-name {
+    width: 70%;
+    padding: 15px;
+}
+
+.task-icons {
+  position: absolute;
+  margin-top: -45px;
+  right: 0px;
+}
+
+.are-you-sure .confirm {
+  display: block;
+  right: 1px;
+}
+
+.confirm a {
+  border-radius: 5px !important;
+  background-color: #eee;
+  padding: 6px 12px;
+  width: 44px;
+  height: 35px;
+  border: 1px solid #c5c3c3 !important;
+}
+
+.confirm a:first-child {
+  color: #2ecc71;
+}
+
+.confirm a:last-child i {
+  color: #D64A4B;
+}
+
+.confirm a i {
+  position: absolute;
+  top: 50%;
+  /* left: 50%; */
+  transform: translate(-50%, -50%);
+}
+
+.fa-check:before, .fa-times:before, li a .fas {
+  margin: 0px !important;
+}

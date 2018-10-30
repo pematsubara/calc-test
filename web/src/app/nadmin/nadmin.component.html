@@ -1,0 +1,6 @@
+<div class="router-layout-space"><router-outlet></router-outlet></div>
+<div class="btn-group">
+  <a class="tablink btn" (click)="activate(1, '/nadmin/logs')" [ngClass]="{'active': page === 1}"><i class="far fa-calendar-check"></i>Status</a>
+  <a class="tablink btn" (click)="activate(2, '/nadmin/tasks')" [ngClass]="{'active': page === 2}"><i class="fas fa-home"></i>Tarefas</a>
+  <a class="tablink btn" (click)="activate(3, '/nadmin/profile')" [ngClass]="{'active': page === 3}"><i class="fas fa-cogs"></i>Perfil</a>
+</div>

@@ -1,0 +1,45 @@
+<div class="container app-login">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h1 class="text-center">
+            <b>Share the Load</b>
+            <br/>
+            <small>Nova Tarefa da Família:</small>
+          </h1>
+          <br/>
+          <form novalidate>
+            <input type="text" name="email" (input)="nameChange($event)" class="form-control" id="InputName" placeholder="Nome da Tarefa">
+
+            <div class="slidecontainer">
+              <input type="range" name="score" (input)="scoreChange($event)" min="1" max="20" value="1" class="slider form-control" id="InputScore">
+            </div>
+            <div class="form-control">
+              <b>Peso:</b><span id="score-span"></span>
+            </div>
+
+            <!-- <input type="range" name="frequency" (input)="frequencyChange($event)" min="1" max="11" value="1" class="slider form-control" id="InputFrequency">
+            <div class="form-control">
+              <b>Frequência:</b><span id="frequency-span"></span>
+            </div> -->
+
+            <div class="icons-list-item form-control" *ngFor="let icone of icones"><i class="{{icone.name}}"></i></div>
+
+            <!-- <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+              <div id="myDropdown" class="dropdown-content icons-list">
+                <div class="icons-list-item" *ngFor="let icone of icones" (click)="selectIcon({{icone}})"><i class="{{icone}}"></div>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div> -->
+
+            <br/>
+            <button type="submit" class="btn btn-primary btn-block" [disabled]="!this.name" (click)="onSubmit($event)">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

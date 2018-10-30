@@ -1,0 +1,21 @@
+<h3>Status</h3>
+<div class="status-card">
+  <i class="{{this.auth.getUser().icon}}"></i>
+  <p>{{this.auth.getUser().name}}</p>
+  <p>{{this.auth.getUser().score}}</p>
+</div>
+
+<ul class="tasks-list">
+  <div *ngFor="let log of logs" [ngClass]="{'no-display': log.user !== userId}">
+    <li class="tasks-list-item" *ngFor="let task of tasks" [ngClass]="{'are-you-sure': clickedItem === log.id, 'no-display': log.task !== task.id}">
+      <div class="task-name" (click)="confirm(log.id)">{{task.name}}</div>
+      <div class="task-icons">
+        <i class="{{task.icon}}"></i>
+        <i class="item-score">+ {{task.score}} pts</i>
+      </div>
+      <div class="confirm">
+        <a class="btn btn-small" (click)="check(log.id)"><i class="fas fa-times"></i></a>
+      </div>
+    </li>
+  </div>
+</ul>
